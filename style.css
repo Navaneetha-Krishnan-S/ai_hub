@@ -1,0 +1,233 @@
+/* General Styles */
+body {
+    background: linear-gradient(to right, #eef2f3, #cfd9df);
+    padding-top: 80px;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(to right, #090781e1, #0072fed6);
+    padding: 15px 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 6px;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: cursive;
+}
+
+.navbar-brand:hover {
+    color: #3fede5fb;
+}
+
+.nav-link {
+    color: white;
+    font-size: 1.1rem;
+    padding: 5px 15px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #3fede5fb;
+    text-decoration: underline;
+}
+
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(to right, #89f7fe, #66a6ff);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    font-family: cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 170px;
+    color:white;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: rgb(232, 223, 223);
+}
+
+.btn-hero {
+    font-size: 1rem;
+    padding: 10px 20px;
+    background: #0664b6;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn-hero:hover {
+    background: #25f67c;
+    color: black;
+}
+
+/* Sections */
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    background: linear-gradient(to right, #cfd9df, #72c1e3b6);
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
+  
+}
+
+section:nth-child(even) {
+    background: linear-gradient(to right, #e6edf0, #eef2f3);
+}
+
+section img {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+section p {
+    font-size: 1rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+section a {
+    font-size: 1rem;
+    padding: 10px 20px;
+    background: #4facfe;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+section a:hover {
+    background: #00c6ff;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;
+    }
+
+    section img {
+        order: -1; /* Ensure images appear before text */
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .btn-hero {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    section p {
+        font-size: 0.9rem;
+    }
+
+    section a {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 0.9rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    section p {
+        font-size: 0.8rem;
+    }
+
+    section a {
+        font-size: 0.8rem;
+        padding: 8px 12px;
+    }
+}

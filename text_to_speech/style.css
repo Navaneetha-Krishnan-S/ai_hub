@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  /* image copied from bgjar.com  */
+  width: 100%;
+  height: 100dvh;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M961.49 39.99 a53.28 53.28 0 1 0 106.56 0 a53.28 53.28 0 1 0 -106.56 0z' fill='%23d3b714'%3e%3c/path%3e%3cpath d='M772.38 309.77L816.65 309.77L816.65 342.66L772.38 342.66z' fill='%23037b0b'%3e%3c/path%3e%3cpath d='M1355.68 408.38 a24.9 24.9 0 1 0 49.8 0 a24.9 24.9 0 1 0 -49.8 0z' fill='%23037b0b'%3e%3c/path%3e%3cpath d='M1052.73 535.34L1092.76 535.34L1092.76 581.08L1052.73 581.08z' stroke='%23d3b714'%3e%3c/path%3e%3cpath d='M1040.68 534.35L1094.41 534.35L1094.41 588.08L1040.68 588.08z' stroke='%23e73635'%3e%3c/path%3e%3cpath d='M467.55 541.73L499.85 541.73L499.85 570.82L467.55 570.82z' fill='%23d3b714'%3e%3c/path%3e%3cpath d='M246 146.44L294.14 146.44L294.14 194.58L246 194.58z' fill='%23037b0b'%3e%3c/path%3e%3cpath d='M893.67 492.94L930.68 492.94L930.68 529.95L893.67 529.95z' fill='%23037b0b'%3e%3c/path%3e%3cpath d='M306.31 29.76L313.31 29.76L313.31 60.4L306.31 60.4z' fill='%23037b0b'%3e%3c/path%3e%3cpath d='M624.51 522.56L678.85 522.56L678.85 561.46L624.51 561.46z' stroke='%23e73635'%3e%3c/path%3e%3cpath d='M788.52 449.33 a39.57 39.57 0 1 0 79.14 0 a39.57 39.57 0 1 0 -79.14 0z' fill='%23d3b714'%3e%3c/path%3e%3cpath d='M810.26 29.16L838.65 29.16L838.65 78.31L810.26 78.31z' stroke='%23e73635'%3e%3c/path%3e%3cpath d='M913.98 150.57L933.85 150.57L933.85 201.19L913.98 201.19z' fill='%23037b0b'%3e%3c/path%3e%3cpath d='M837.25 342.08a55.44 55.44 0 1 0 98.38-51.16z' fill='%23e73635'%3e%3c/path%3e%3cpath d='M1361.46 534.45L1364.82 534.45L1364.82 563.88L1361.46 563.88z' fill='%23037b0b'%3e%3c/path%3e%3cpath d='M744.27 200.27a45.01 45.01 0 1 0 9.7 89.49z' stroke='%23d3b714'%3e%3c/path%3e%3cpath d='M674.57 537.28L715.17 537.28L715.17 577.88L674.57 577.88z' fill='%23d3b714'%3e%3c/path%3e%3cpath d='M1378.83 447.82a25.15 25.15 0 1 0-47.77-15.73z' stroke='%23e73635'%3e%3c/path%3e%3cpath d='M864.39 541.3L877.95 541.3L877.95 554.86L864.39 554.86z' fill='%23037b0b'%3e%3c/path%3e%3cpath d='M655.92 87.3L700.3 87.3L700.3 116.81L655.92 116.81z' fill='%23e73635'%3e%3c/path%3e%3cpath d='M951.76 494.21L998.51 494.21L998.51 538.67L951.76 538.67z' stroke='%23e73635'%3e%3c/path%3e%3cpath d='M356.39 96.91 a17.34 17.34 0 1 0 34.68 0 a17.34 17.34 0 1 0 -34.68 0z' stroke='%23d3b714'%3e%3c/path%3e%3cpath d='M338.8 383.52L386.48 383.52L386.48 431.2L338.8 431.2z' stroke='%23d3b714'%3e%3c/path%3e%3cpath d='M331.25 25.48L331.93 25.48L331.93 26.86L331.25 26.86z' fill='%23e73635'%3e%3c/path%3e%3cpath d='M206.11 32.92a45.29 45.29 0 1 0-72.25-54.64z' fill='%23e73635'%3e%3c/path%3e%3cpath d='M1269.91 121.97a24.32 24.32 0 1 0 41.97 24.59z' stroke='%23d3b714'%3e%3c/path%3e%3cpath d='M865.57 484.74L904.28 484.74L904.28 523.45L865.57 523.45z' fill='%23d3b714'%3e%3c/path%3e%3cpath d='M455.49 286.77L470.14 286.77L470.14 301.42L455.49 301.42z' fill='%23e73635'%3e%3c/path%3e%3cpath d='M857.32 547.86L860.41 547.86L860.41 562.1L857.32 562.1z' stroke='%23d3b714'%3e%3c/path%3e%3cpath d='M1256.53 31.68 a0.82 0.82 0 1 0 1.64 0 a0.82 0.82 0 1 0 -1.64 0z' fill='%23d3b714'%3e%3c/path%3e%3cpath d='M1431.33 541.58a13.37 13.37 0 1 0 8.11-25.48z' fill='%23e73635'%3e%3c/path%3e%3cpath d='M914.25 472.37a37.92 37.92 0 1 0 66.36 36.72z' stroke='%23e73635'%3e%3c/path%3e%3cpath d='M1088.97 243.01L1109.25 243.01L1109.25 244.88L1088.97 244.88z' stroke='%23e73635'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  margin: 0;
+  font-size: 80px;
+  color: white;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+textarea {
+  margin: 30px 0;
+  padding: 5px;
+  width: 450px;
+  height: 250px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+}
+/* Add this to the container holding the buttons */
+button {
+  padding: 15px 30px;
+  margin: 15px;
+  font-size: 18px;
+  cursor: pointer;
+  color: #fff;
+  background: #4345c0;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #45a049;
+  transform: scale(1.05);
+}
+
+button:active {
+  background: #3e8e41;
+  transform: scale(0.95);
+}
+
+/* Ensure buttons are in a single line */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container > textarea {
+  margin-bottom: 20px;
+}
+
+.container > div {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px; /* Adds spacing between buttons */
+}
+
+
+
+/* Mobile styles */
+@media only screen and (min-width: 100px) and  (max-width: 430px) {
+  html,
+  body {
+      width: 100%;
+      overflow-x: hidden;
+  }
+  h2{
+    font-size: 30px;
+  }
+  textarea{
+    width: 75%;
+    height: 40%;
+  }
+  button{
+    font-size: 15px;
+  }
+}
+
+/* Tablet styles */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 1024px) {
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+}
+

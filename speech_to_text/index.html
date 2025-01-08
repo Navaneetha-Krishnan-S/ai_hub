@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Speech to Text</title>
+</head>
+<body class="container">
+ 
+  <h2>Speech to Text Demo</h2>
+  <div id="status-indicator">
+    <span class="dot" id="indicator"></span>
+    <span id="status-text">Ready</span>
+  </div>
+
+  <div class="button-row">
+    <button id="start">Start Listening</button>
+    <button id="stop">Stop Listening</button>
+  </div>
+
+  <div class="button-row">
+    <button id="generate">Generate Text File</button>
+    <button id="reset">Reset</button>
+  </div>
+
+  <div id="output">Speech will appear here...</div>
+  <script src="script.js"></script>
+</body>
+</html>

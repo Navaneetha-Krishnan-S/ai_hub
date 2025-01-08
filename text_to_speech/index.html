@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text to Speech</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Text to Speech</h2>
+      <textarea id="text" placeholder="Enter text to speak..."></textarea><br />
+      <div>
+        <button onclick="speak()">Start</button>
+        <button onclick="stopSpeaking()">Stop</button>
+        <button onclick="resetText()">Reset</button>
+      </div>
+    </div>
+    
+  </body>
+  <script>
+    var speech = new SpeechSynthesisUtterance(); // Using inbuilt speech API
+
+    function speak() {
+      var text = document.getElementById("text").value.trim(); // Get text and remove extra spaces
+      if (!text) {
+        alert("Please enter some text to speak!"); // Show alert if no text is entered
+        return;
+      }
+      speech.text = text;
+      speech.volume = 1;
+      speech.rate = 1;
+      speech.pitch = 1;
+      window.speechSynthesis.speak(speech);
+    }
+
+    function stopSpeaking() {
+      window.speechSynthesis.cancel(); // Stops the current speech
+    }
+
+    function resetText() {
+      document.getElementById("text").value = ""; // Clears the textarea
+    }
+  </script>
+</html>
