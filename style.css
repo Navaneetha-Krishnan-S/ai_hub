@@ -24,7 +24,7 @@ h2 {
 
 /* Navbar */
 .navbar {
-    background: linear-gradient(to right, #090781e1, #0072fed6);
+    background: linear-gradient(to right, #090781e1, #226ac3d1);
     padding: 15px 10px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 6px;
     z-index: 1000;
@@ -77,20 +77,35 @@ h2 {
 .hero-section h1 {
     font-size: 3rem;
     font-weight: bold;
-    margin-bottom: 170px;
+    margin-bottom: 40px;
     color:white;
+    border-radius: 50px;
+    text-shadow: 
+    0 0 5px #000000,  /* Inner glow */
+    0 0 10px #0a0b0c, /* Slightly larger outer glow */
+    0 0 20px #0a0a0a, /* Further glow effect */
+    0 0 40px #00c6ff, /* Extended glow */
+    0 0 60px #00c6ff; /* Final glowing layer */
 }
 
-.hero-section p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
+
+
+.hero-section h5 {
+    font-size: 1.3rem;
+    margin-bottom: 50px;
     color: rgb(232, 223, 223);
+    text-shadow: 
+    0 0 5px #000000,  /* Inner glow */
+    0 0 10px #0a0b0c, /* Slightly larger outer glow */
+    0 0 20px #0a0a0a, /* Further glow effect */
+    0 0 40px #00c6ff, /* Extended glow */
+    0 0 60px #00c6ff;
 }
 
 .btn-hero {
     font-size: 1rem;
     padding: 10px 20px;
-    background: #0664b6;
+    background: #074982;
     color: white;
     border-radius: 5px;
     text-decoration: none;
@@ -135,8 +150,8 @@ section h2 {
     margin-bottom: 15px;
 }
 
-section p {
-    font-size: 1rem;
+section h5 {
+    font-size: 1.2rem;
     color: #2c3e50;
     margin-bottom: 20px;
 }
