@@ -1,6 +1,6 @@
 # AI Hub Project
 
-![AI Hub Banner](https://via.placeholder.com/1200x400.png?text=AI+Hub+Project)
+![AI Hub Banner](https://github.com/Navaneetha-Krishnan-S/ai_hub_project/blob/main/Ai%20Hub.png)
 
 Welcome to the **AI Hub Project**, an all-in-one multi-tool application powered by AI. This project integrates multiple AI-driven functionalities into a user-friendly platform, showcasing the versatility of artificial intelligence in everyday tasks.
 
