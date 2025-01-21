@@ -1,0 +1,301 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+    color: #333;
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(135deg, #000, #333);
+    color: white;
+    padding: 5rem 2rem;
+}
+
+/* Chat Container */
+.chat-container {
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s ease-in-out;
+}
+
+.ai-chat-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    animation: fadeIn 1s ease-in-out;
+    margin-top: 20px;
+}
+
+/* Style for the uploaded image inside the user chat box */
+.user-chat-area img {
+    width: 75px; /* Set a fixed width for the uploaded image */
+    height: 75px; /* Set a fixed height for the uploaded image to make it square */
+    object-fit: cover; /* Ensures the image scales properly without distortion */
+    border-radius: 5px; /* Optional: Add rounded corners to the image */
+    margin-right: 10px; /* Optional: Adjust space between image and text */
+}
+.user-chat-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    animation: fadeIn 1s ease-in-out;
+    margin-top: 20px;
+}
+
+.ai-chat-box {
+    justify-content: flex-start; /* Bot aligned to the left */
+}
+
+.user-chat-box {
+    justify-content: flex-start; /* Ensures space between chat and image */
+    flex-direction: row-reverse; /* Image stays on the right */
+}
+
+
+
+
+#aiImage, #userImage {
+    width: 50px;
+    height: 50px;
+    animation: bounceIn 0.8s ease-in-out;
+}
+
+.ai-chat-area, .user-chat-area {
+    background: #f0f0f0;
+    border-radius: 1rem;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 70%;
+
+}
+
+.ai-chat-area {
+    background: #e9ecef;
+    text-align: left; /* Bot message left-aligned */
+}
+
+
+
+/* Prompt Area */
+.prompt-area {
+    width: 100%;
+}
+
+#prompt {
+    width: 60%;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 50px;
+    box-shadow: inset 0px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.prompt-area button {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.prompt-area button img {
+    width: 50%;
+}
+
+
+
+#image:hover, #submit:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.prompt-area button img {
+    width: 20px; /* Adjust width */
+    height: 20px; /* Adjust height */
+    object-fit: contain; /* Maintain aspect ratio */
+}
+
+/* Footer */
+footer {
+    background: #f8f9fa;
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+.user-chat-area:empty {
+    display: none; /* Hide empty chat bubbles */
+}
+/* Animations */
+@keyframes slideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Media Queries */
+
+/* Tablet and Larger Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+    header {
+        padding: 3rem 1rem;
+    }
+
+    header h1 {
+        font-size: 2rem; /* Adjust header title size */
+    }
+
+    header p {
+        font-size: 1rem; /* Adjust header subtitle size */
+    }
+
+    #prompt {
+        width: 80%; /* Expand input field width for better usability */
+    }
+
+    .ai-chat-area, .user-chat-area {
+        font-size: 0.9rem; /* Reduce chat bubble font size */
+        max-width: 85%; /* Adjust chat bubble width */
+    }
+
+    #aiImage, #userImage {
+        width: 40px; /* Scale down chat icons */
+        height: 40px;
+    }
+
+    .prompt-area {
+        gap: 1rem; /* Reduce space between input and buttons */
+    }
+
+    footer {
+        font-size: 0.8rem; /* Adjust footer font size */
+        padding: 1rem;
+    }
+}
+
+/* Mobile Devices (max-width: 576px) */
+@media (max-width: 576px) {
+    header {
+        padding: 2rem 1rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem; /* Smaller header title */
+    }
+
+    header p {
+        font-size: 0.9rem; /* Smaller header subtitle */
+    }
+
+    .chat-container {
+        padding: 2rem 1rem; /* Reduce padding for smaller screens */
+    }
+
+    .ai-chat-box, .user-chat-box {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center; /* Center-align for smaller screens */
+    }
+
+    .ai-chat-area, .user-chat-area {
+        text-align: center; /* Center-align text */
+        max-width: 90%; /* Further adjust bubble width */
+        font-size: 0.8rem; /* Smaller text for mobile */
+    }
+    .user-chat-area:empty {
+        display: none; /* Hide empty chat bubbles */
+    }
+    
+    #aiImage, #userImage {
+        width: 30px; /* Further reduce icon size */
+        height: 30px;
+    }
+
+    #prompt {
+        width: 100%; /* Input field spans full width */
+        padding: 0.8rem; /* Adjust padding for smaller screens */
+        font-size: 0.9rem;
+    }
+
+    .prompt-area {
+        gap: 0.5rem; /* Minimal gap between input and buttons */
+    }
+
+    .prompt-area button {
+        width: 50px; /* Smaller buttons */
+        height: 50px;
+    }
+
+    footer {
+        font-size: 0.7rem; /* Adjust footer font size further */
+        padding: 0.5rem;
+    }
+}
+
+/* Small Mobile Devices (max-width: 375px) */
+@media (max-width: 375px) {
+    header h1 {
+        font-size: 1.2rem; /* Compact header title */
+    }
+
+    header p {
+        font-size: 0.8rem; /* Compact header subtitle */
+    }
+
+    .chat-container {
+        padding: 1.5rem 0.5rem; /* Further reduce padding */
+    }
+    .user-chat-area:empty {
+        display: none; /* Hide empty chat bubbles */
+    }
+    
+    .ai-chat-area, .user-chat-area {
+        font-size: 0.7rem; /* Smaller font size */
+    }
+
+    #aiImage, #userImage {
+        width: 25px; /* Smallest icon size */
+        height: 25px;
+    }
+
+    .prompt-area button {
+        width: 40px; /* Smallest button size */
+        height: 40px;
+    }
+}
+

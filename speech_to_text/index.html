@@ -4,27 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Speech to Text</title>
+  <title>Speech to Text - Krish</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body class="container">
- 
-  <h2>Speech to Text Demo</h2>
+
+  <h2 style="margin-top: 30px;">Speech to Text</h2>
   <div id="status-indicator">
     <span class="dot" id="indicator"></span>
     <span id="status-text">Ready</span>
   </div>
 
+  <div id="output">Text will appear here...</div>
+
   <div class="button-row">
-    <button id="start">Start Listening</button>
-    <button id="stop">Stop Listening</button>
+    <button id="start" title="Start">
+      <i class="fas fa-microphone"></i>
+    </button>
+    <button id="stop" title="Stop">
+      <i class="fas fa-microphone-slash"></i>
+    </button>
   </div>
 
   <div class="button-row">
-    <button id="generate">Generate Text File</button>
-    <button id="reset">Reset</button>
+    <button id="generate" title="Generate Text File">
+      <i class="fas fa-file-alt"></i>
+    </button>
+    <button id="reset" title="Reset">
+      <i class="fas fa-sync-alt"></i>
+    </button>
   </div>
 
-  <div id="output">Speech will appear here...</div>
+  <div class="button-row">
+    <a href="../index.html" st><button id="generate" title="Home page">
+      <i class="fas fa-home"></i>
+    </button>
+  </a>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
