@@ -1,4 +1,4 @@
-const key = "YOUR KEY";
+const key = "AIzaSyDFksxkWupQmcb4kptJEr1x6U3Hyf7tRXQ";
 const inputText = document.getElementById("input");
 const image = document.getElementById("image");
 const GenBtn = document.getElementById("btn");
